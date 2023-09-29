@@ -164,6 +164,21 @@
 // <p></p>, добавив в открывающий тег атрибут style со всеми сти-
 // лями, перечисленными в массиве.
 
+let cssArray = ['green', '25px', 600, 'underline']
+let style = {
+    title: "green",
+    styleProp: cssArray
+}
+
+function showStyle(text, style) {
+    document.write('<p style="">текст</p>')
+}
+//     document.write('<p style="color: '${cssArray}; font-size: 25px; font-weight: 600; text-decoration: underline;">green</p>')
+// }
+
+showStyle('Stroka', style)
+
+
 
 // Задание 4
 // Создать массив аудиторий академии. Объект-аудитория со-
