@@ -164,19 +164,27 @@
 // <p></p>, добавив в открывающий тег атрибут style со всеми сти-
 // лями, перечисленными в массиве.
 
-let cssArray = ['green', '25px', 600, 'underline']
-let style = {
-    title: "green",
-    styleProp: cssArray
-}
-
-function showStyle(text, style) {
-    document.write('<p style="">текст</p>')
-}
-//     document.write('<p style="color: '${cssArray}; font-size: 25px; font-weight: 600; text-decoration: underline;">green</p>')
+// let textColor = {
+//         title: 'color',
+//         property: 'orange'
 // }
-
-showStyle('Stroka', style)
+// let fontSize = {
+//         title: 'size',
+//         property: '36px'
+// }
+// let textAlign = {
+//         title: 'align',
+//         property: 'center'
+// }
+// let textDecoration = {
+//         title: 'decoration',
+//         property: 'underline'
+// }
+// let cssArray = [textColor, fontSize, textAlign, textDecoration]
+// function showText(text, array) {
+//     document.write(`<p style='color: ${array[0].property}; font-size: ${array[1].property}; text-align: ${array[2].property}; text-decoration: ${array[3].property};'>${text}</p>`)
+// }
+// showText('Текст для вывода', cssArray)
 
 
 
@@ -193,3 +201,90 @@ showStyle('Stroka', style)
 // 4. Функция сортировки аудиторий по количеству мест.
 // 5. Функция сортировки аудиторий по названию (по алфа-
 // виту).
+
+// let auditory1 = {
+//     title: 'A4',
+//     places: 15,
+//     faculty: 'Дизайн'
+// };
+// let auditory2 = {
+//     title: 'A2',
+//     places: 17,
+//     faculty: 'Графика'
+// };
+// let auditory3 = {
+//     title: 'A3',
+//     places: 12,
+//     faculty: 'Разработка ПО'
+// };
+// let auditory4 = {
+//     title: 'A1',
+//     places: 19,
+//     faculty: 'Разработка WEB'
+// };
+// let auditories = [auditory1, auditory2, auditory3, auditory4];
+
+// function displayAuditory(array) {
+//     array.forEach(element => {
+//         console.log(`Аудитория ${element.title}, мест ${element.places}, факультет ${element.faculty}`)
+//     });
+// }
+
+// function displayAuditoryFaculty(titleFaculty, array) {
+//     array.forEach(element => {
+//         if (element.faculty == titleFaculty) {
+//             console.log(`Аудитория ${element.title}`)
+//         }        
+//     });
+// }
+
+// let group1 = {
+//     title: 'WEB31',
+//     students: 19,
+//     faculty: 'Разработка WEB'
+// }
+// function findAuditory(groupTitle, array) {
+//     array.forEach(element => {
+//         if (element.places >= groupTitle.students && element.faculty == groupTitle.faculty) {
+//             console.log(`Аудитория ${element.title}`)
+//         }
+//     });
+// }
+
+// function sortAuditoryPlaces(array) {
+//     array.sort(compareValue);
+//     array.forEach(element => {
+//         console.log(`Аудитория ${element.title}`)
+//     });
+// }
+// function compareValue(a, b) {
+//     if (a.places > b.places){
+//         return 1;
+//     }
+//     if (a.places < b.places) {
+//         return -1;
+//     }
+//     return 0;
+// }
+
+// function sortAuditoryTitle(array) {
+//     array.sort(compareString);
+//     array.forEach(element => {
+//         console.log(`Аудитория ${element.title}`)
+//     });
+// }
+// function compareString(a, b) {
+//     if (a.title > b.title){
+//         return 1;
+//     }
+//     if (a.title < b.title) {
+//         return -1;
+//     }
+//     return 0;
+// }
+
+// displayAuditory(auditories);
+// displayAuditoryFaculty("Графика", auditories);
+// findAuditory(group1, auditories);
+// sortAuditoryPlaces(auditories);
+// sortAuditoryTitle(auditories)
